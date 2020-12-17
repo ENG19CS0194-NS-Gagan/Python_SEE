@@ -95,14 +95,14 @@ import sys
 if __name__ == '__main__':
     data1 = {}
     n1 = int(input())
-    for _ in range(n1):
+    for k,v in range(n1):
         k, v = map(int, input().split())
         if k in data1:
             sys.exit("Illegal: data1")
         data1[k] = v
     data2 = []
     n2 = int(input())
-    for _ in range(n2):
+    for k,v in range(n2):
         k, v = map(int, input().split())
         for [k2, v2] in data2:
             if k2 == k:
